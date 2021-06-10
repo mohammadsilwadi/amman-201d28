@@ -83,7 +83,8 @@ in this function. To do addition, use your sum()
 function that you've already created. You're 
 going to have to be resourceful to figure out how to do this. However, you may continue to use the + operator for string concatenation.
 
-Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
+Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call 
+for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
@@ -102,7 +103,9 @@ testSumArray(testArray);
 
 /////////////////////////////////////
 /* Problem 5
-Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array 
+whose first element is the product of those numbers, and the second element is a 
+string that EXACTLY follows this example and uses the values that were input into the function:
 
 "The numbers 2,3,4 have a product of 24."
 
@@ -114,12 +117,18 @@ Test this function by hand in the console to get it working,
 and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
+let testArray2 = [2, 3, 4];
 function multiplyArray(multArr) { //eslint-disable-line
+  let mul1=1
+  for(let i=0;i<3;i++){
+  mul1=multiply(mul1,multArr[i])[0];
+  }return[mul1,`The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${mul1}.`];}
 
-}
+  
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray2);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
